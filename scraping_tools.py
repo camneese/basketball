@@ -33,9 +33,11 @@ player_handle_dict = {
     'Khris Middleton' : 'm/middlkh01',
     'Donovan Mitchell' : 'm/mitchdo01',
     'Ja Morant' : 'm/moranja01',
+    'Dejounte Murray' : 'm/murrade01',
     'Chris Paul' : 'p/paulch01',
     'Julius Randle' : 'r/randlju01',
     'Mitchell Robinson' : 'r/robinmi01',
+    'Domantas Sabonis' : 's/sabondo01',
     'Jayson Tatum' : 't/tatumja01',
     'Trae Young' : 'y/youngtr01',
     'Ivaca Zubac' : 'z/zubaciv01'
@@ -50,7 +52,8 @@ stats_dict = {
     'Steals' : 'STL',
     'Blocks' : 'BLK',
     '3-PT Made' : '3P',
-    'Pts+Reb+Ast' : None
+    'Pts+Reb+Ast' : None,
+    'Free Throws Made' : 'FT'
 }
 
 
@@ -221,7 +224,7 @@ class PropositionLog:
             game_log = self.player_object_list[prop].game_log
             statistic = self.prop_df.iloc[prop,1]
             line = self.prop_df.iloc[prop,2]
-            if statistic == 'Pts + Reb + Ast':
+            if statistic == 'Pts+Reb+Ast':
                 p = np.mean(game_log['PTS'] + game_log['TRB'] + game_log['AST'] > line)
             else:
                 # Get the column name for the statistic in the proposition
