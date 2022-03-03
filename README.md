@@ -16,5 +16,5 @@ On basketballreference.com, a fantastic website containing game logs for NBA pla
 
 Future improvements:
 
--Generalize player lookup by checking if a generated player ID leads to the correct webpage.
-
+- Generalize player lookup by checking if a generated player ID leads to the correct webpage.
+- Calculate expected earnings for different types of selections (2-person power play, 3-person flex play, etc.).
