@@ -1,5 +1,7 @@
 # basketball
-Analytics tools for evaluating NBA player propositions. Player propositions are forms of wagers that many sportsbooks offer. They are often simple questions; for instance, is Stephen Curry going to have have over or under 24.5 points in tonight's game? I don't intend to place bets myself, but it's a great subject for analyzing. Given a collection of player propositions, my goal is to find the combination of picks that is most likely to result in a positive payout.
+Analytics tools for predicting NBA player performances. 
+
+Player propositions are forms of wagers that many sportsbooks offer. They are often simple questions; for instance, is Stephen Curry going to have have over or under 24.5 points in tonight's game? I don't intend to place bets myself, but it's a great subject for analyzing. Given a collection of player propositions, my goal is to find the combination of picks that is most likely to result in a positive payout.
 
 Written in Python, this project features web scraping, object-oriented programming, database manipulation, and statistical analysis.
 
